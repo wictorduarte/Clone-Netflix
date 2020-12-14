@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Queen Gambit</title>
+    <link rel="stylesheet" href="/style/films.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="/index.html"><h2 class="logo">Netflix</h2></a>
+            <nav>
+                <a href="/index.html">Ínicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h3 class="titulo">THE QUEENS GAMBIT</h3>
+        <div class="video">
+            <iframe width="993" height="558" src="https://www.youtube.com/embed/cnqV3wsZlpo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p id="sinopse">Durante a Guerra Fria, em um orfanato do Kentucky, uma garota prodígio do xadrez luta contra o vício para se tornar a número um do mundo.</p>
+        <div class="botoes">
+            <button role="button" class="botao" id="return" onclick="returnToMenu()">
+                <i class="fas fa-play"></i>
+                RETORNAR AO MENU
+            </button>
+
+            <button role="button" class="botao" id="btnInformation" onclick="moreInformation()" onmouseout="closeInformation()">
+                <i class="fas fa-info-circle"></i>
+                MAIS INFORMAÇÕES
+            </button>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">Netflix</h2>
+            <a href="/index.html"><h2 class="logo">Netflix</h2></a>
             <nav>
                 <a href="#">Ínicio</a>
                 <a href="#">Séries</a>
@@ -30,14 +30,14 @@
         <div class="filme-principal">
             <div class="container">
                 <h3 class="titulo">THE QUEENS GAMBIT</h3>
-                <p class="sinopse">Durante a Guerra Fria, em um orfanato do Kentucky, uma garota prodígio do xadrez luta contra o vício para se tornar a número um do mundo.</p>
+                <p class="sinopse" id="sinopse">Durante a Guerra Fria, em um orfanato do Kentucky, uma garota prodígio do xadrez luta contra o vício para se tornar a número um do mundo.</p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" id="watchNow" onclick="assistirAgora()">
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
         
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" id="btnInformation" onclick="moreInformation()" onmouseout="closeInformation()">
                         <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
                     </button>
@@ -99,5 +99,6 @@
     <script src="/js/owl/jquery.min.js"></script>
     <script src="/js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
